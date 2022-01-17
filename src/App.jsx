@@ -8,17 +8,17 @@ import { useState, useEffect } from "react"
 function App() {
   const [state, setState] = useState(null);
 
-
   useEffect(() => {
     fetch("http://localhost:8000/practice")
       .then(r => r.json())
       .then(res => {
         setState(res)
-        runAccessTest(res)
-        runDataMappingTest(res)
       })
-
   }, [])
+  if (!state) return null
+  runAccessTest(state)
+  runDataMappingTest(state)
+
 
   return (
     <main className="App">

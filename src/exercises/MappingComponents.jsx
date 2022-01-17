@@ -11,7 +11,7 @@ function MappingComponents(props) {
           1. With map, create a <p></p> element for each bird.
           E.g. <p>Eagle</p> 
           */}
-
+        {props.practiceShape.birds.map(bird => <p key={bird}>{bird}</p>)}
         {/* code your solution here */}
 
       </div>
@@ -22,7 +22,9 @@ function MappingComponents(props) {
         {/* 
          Create a <h6> element for each quote, in the form of:
          <h6>"Think different"</h6>
+                
         */}
+        {props.practiceShape.items.quotes.map(quote => <h6 key={quote.quote}>{quote.quote}</h6>)}
         {/* code your solution here */}
 
       </div>
@@ -34,6 +36,11 @@ function MappingComponents(props) {
          Create a <h5> element for each person and their fav ice-cream:
          <h5>Winston Churchill likes Vanilla ice-cream</h5>
         */}
+        {props.practiceShape.items.quotes.map(quote =>
+          <h5 key={quote.person.name}>{quote.person.name} likes {quote.person.favouriteIceCream} ice-cream</h5>
+        )}
+
+
         {/* code your solution here */}
 
       </div>
@@ -44,8 +51,8 @@ function MappingComponents(props) {
         <h3>Cat pictures:</h3>
         {/* 
          Create an <Image /> component for each cat picture.
-
         {/* code your solution here */}
+        {props.practiceShape.items.images.map(img => <Image key={img.imgUrl} imgUrl={img.imgUrl} />)}
 
       </div>
     </>
