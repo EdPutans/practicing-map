@@ -6,15 +6,26 @@
           "quote": "I am the greatest",
           "person": {
             "name": "Winston Churchill",
-            "favouriteIceCream": "Vanilla"
+            "favouriteIceCream": "Vanilla",
+            "hobbies": [
+              "Reading",
+              "Sleeping",
+              "Coding"
+            ]
           },
+         
           "id": 1
         },
         {
           "quote": "It's my life",
           "person": {
             "name": "John Lennon",
-            "favouriteIceCream": "Chocolate"
+            "favouriteIceCream": "Chocolate",
+            "hobbies": [
+              "Sleeping",
+              "Shouting at Egon",
+              "Stealing memes from Reddit"
+            ]
           },
           "id": 2
         },
@@ -22,7 +33,12 @@
           "quote": "What a wonderful world",
           "person": {
             "name": "George Orwell",
-            "favouriteIceCream": "Pistaccio"
+            "favouriteIceCream": "Pistaccio",
+            "hobbies": [
+              "1984'ing",
+              "Dabbing",
+              "Dancing"
+            ]
           },
           "id": 3
         }

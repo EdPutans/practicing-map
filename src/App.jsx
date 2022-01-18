@@ -8,7 +8,6 @@ import { useState, useEffect } from "react"
 function App() {
   const [state, setState] = useState(null);
 
-
   useEffect(() => {
     fetch("http://localhost:8000/practice")
       .then(r => r.json())
